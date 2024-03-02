@@ -40,13 +40,12 @@ def draw_digit(strip, start, digit):
 
     strip.show()
 
-def display_time(strip):
+def display_time(strip, iterations=1):
     try:
-        while True:
+        for _ in range(iterations):
             now = datetime.datetime.now()
             hours = now.hour
             minutes = now.minute
-            #seconds = now.second
 
             # Display hours
             draw_digit(strip, 0, hours // 10)
