@@ -1,6 +1,6 @@
-# rpi_ws2812_clock
+# rpi_ws2812_4x8
 
-This repository contains Python code to display the current time on an LED strip using a Raspberry Pi.
+This repository contains Python code to display various animations on a 4x8 LED matrix using a Raspberry Pi.
 
 ## Dependencies
 
@@ -14,10 +14,10 @@ pip install rpi_ws281x
 
 ## Configuration
 
-The LED strip configuration can be adjusted in the `main.py` file:
+The LED matrix configuration can be adjusted in the `hardware.py` file:
 
 ```python
-# LED strip configuration:
+# LED matrix configuration:
 LED_COUNT      = 32      # Number of LED pixels.
 LED_PIN        = 18      # GPIO pin connected to the pixels (must support PWM!).
 LED_FREQ_HZ    = 800000  # LED signal frequency in hertz (usually 800khz)
@@ -34,7 +34,20 @@ To run the program, navigate to the project directory in your terminal and run t
 python main.py
 ```
 
-This will start the LED clock display. The display will continue until a `KeyboardInterrupt` (typically triggered by a Ctrl+C command) is detected, at which point all the LEDs on the strip will be turned off.
+This will start the LED matrix display. The display will continue until a `KeyboardInterrupt` (typically triggered by a Ctrl+C command) is detected, at which point all the LEDs on the matrix will be turned off.
+
+## Animations
+
+The following animations are included:
+
+- Clock: Displays the current time.
+- Random: Lights up random LEDs.
+- Spiral: Creates a spiral effect.
+- Smile: Displays a smiley face.
+- Flag: Displays a flag.
+- Logan: Displays a scrolling text.
+- Wave: Creates a wave effect.
+- Rainbow: Creates a rainbow effect.
 
 ## License
 
