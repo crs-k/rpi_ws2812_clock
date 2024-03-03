@@ -1,5 +1,4 @@
 from rpi_ws281x import Adafruit_NeoPixel, Color
-import src.functions.patterns as patterns
 
 
 # LED strip configuration:
@@ -13,8 +12,8 @@ LED_INVERT     = False   # True to invert the signal (when using NPN transistor 
 # Create NeoPixel object with appropriate configuration.
 strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS)
 
-if __name__ == "__main__":
-    strip.begin()
-
-    patterns.clock.display(5)
-    patterns.random.display(32)
+def turn_off(strip):
+    # Turn off all LEDs
+    for i in range(strip.numPixels()):
+        strip.setPixelColor(i, Color(0, 0, 0))
+    strip.show()
