@@ -1,4 +1,3 @@
-```markdown
 # rpi_ws2812_clock
 
 This repository contains Python code to display the current time on an LED strip using a Raspberry Pi.
@@ -40,4 +39,3 @@ This will start the LED clock display. The display will continue until a `Keyboa
 ## License
 
 This project is licensed under the terms of the MIT license.
-```

@@ -9,3 +9,5 @@ if __name__ == "__main__":
 
     patterns.clock.display(5)
     patterns.random.display(32)
+    patterns.clock.display(5)
+    patterns.random.display(32)
