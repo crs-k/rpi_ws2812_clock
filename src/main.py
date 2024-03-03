@@ -7,7 +7,5 @@ if __name__ == "__main__":
     strip_obj = strip()
     strip_obj.begin()
 
-    patterns.clock.display(5)
-    patterns.random.display(32)
-    patterns.clock.display(5)
-    patterns.random.display(32)
+    clock_display(5, strip_obj)
+    random_display(32, strip_obj)
