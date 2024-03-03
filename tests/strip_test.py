@@ -10,7 +10,7 @@ class TestTurnOff(unittest.TestCase):
     def test_turn_off(self, mock_strip):
         mock_strip.numPixels.return_value = 5
         from src.functions.strip import turn_off
-        turn_off()
+        turn_off(mock_strip)
         calls = [call(i, 0) for i in range(5)]
         mock_strip.setPixelColor.assert_has_calls(calls)
         mock_strip.show.assert_called_once()
