@@ -1,4 +1,4 @@
-from rpi_ws281x import Adafruit_NeoPixel, Color
+from rpi_ws281x import Adafruit_NeoPixel
 
 # LED strip configuration:
 LED_COUNT      = 32      # Number of LED pixels.

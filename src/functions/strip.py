@@ -1,4 +1,5 @@
-from src.functions.hardware import strip, Color
+from src.functions.hardware import strip
+from rpi_ws281x import Color
 
 
 def turn_off():
