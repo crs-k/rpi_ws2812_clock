@@ -38,12 +38,12 @@ def display(num_times, led_strip):
             minutes = now.minute
 
             # Display hours
-            draw_digit(led_strip, 0, hours // 10)
-            draw_digit(led_strip, 8, hours % 10)
+            draw_digit(0, hours // 10, led_strip)
+            draw_digit(8, hours % 10, led_strip)
 
             # Display minutes
-            draw_digit(led_strip, 16, minutes // 10)
-            draw_digit(led_strip, 24, minutes % 10)
+            draw_digit(16, minutes // 10, led_strip)
+            draw_digit(24, minutes % 10, led_strip)
 
             time.sleep(1)
     except KeyboardInterrupt:
